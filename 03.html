@@ -1,3 +1,15 @@
 <script>
-    
+     function celsiusParaFahrenheit(celsius) {
+        return (9 * celsius + 160) / 5;
+    }
+
+    let celsius = Number(prompt("Digite a temperatura em graus Celsius:"));
+
+    if (isNaN(celsius)) {
+        alert("Por favor, insira um número válido para a temperatura.");
+    } else {
+        let fahrenheit = celsiusParaFahrenheit(celsius);
+        alert(`${celsius}°C é igual a ${fahrenheit.toFixed(2)}°F.`);
+    }
+
 </script>

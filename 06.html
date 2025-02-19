@@ -7,31 +7,13 @@
     P = 2 * π * r
     */
 
-    //ENTRADA
-    function calcularArea(raio) {
-        return Math.PI * raio ** 2;
+    let raio = Number(prompt("Digite o raio do círculo:"));
+    
+    if (isNaN(raio) || raio <= 0) {
+        alert("Insira um valor válido para o raio.");
+    } else {
+        alert(`Resultados para o círculo de raio ${raio}:\n` +
+            `- Área: ${(Math.PI * raio ** 2).toFixed(2)} unidades²\n` +
+            `- Perímetro: ${(2 * Math.PI * raio).toFixed(2)} unidades`);
     }
-    function calcularPerimetro(raio) {
-        return 2 * Math.PI * raio;
-    }
-    //PROCESSAMENTO
-    function programa() {
-        let raio = parseFloat(prompt("Digite o raio do círculo:"));
-
-        if (isNaN(raio) || raio <= 0) {
-            alert("Por favor, insira um valor válido para o raio.");
-            return;
-        }
-
-        let area = calcularArea(raio);
-        let perimetro = calcularPerimetro(raio);
-
-        alert(`Resultados para o círculo de raio ${raio}:\n\n` +
-            `- Área: ${area.toFixed(2)} unidades²\n` +
-            `- Perímetro: ${perimetro.toFixed(2)} unidades`);
-    }
-
-    //SAÍDA
-    programa();
-
 </script>

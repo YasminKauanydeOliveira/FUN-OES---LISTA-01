@@ -5,27 +5,21 @@
     */
 
     function verificarParOuImpar(numero) {
-        if (numero % 2 === 0) {
+        if (numero % 2 == 0) {
             return "par";
         } else {
             return "ímpar";
         }
     }
 
-    function programa() {
-        let numero = parseInt(prompt("Digite um número:"));
+    let numero = Number(prompt("Digite um número:"));
 
-        if (isNaN(numero)) {
-            alert("Por favor, insira um número válido.");
-            return;
-        }
-
+    if (isNaN(numero)) {
+        alert("Por favor, insira um número válido.");
+    } else {
         let resultado = verificarParOuImpar(numero);
         alert(`O número ${numero} é ${resultado}.`);
     }
-
-    programa();
-
-
-
 </script>
+
+  

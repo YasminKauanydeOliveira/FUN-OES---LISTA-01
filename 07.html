@@ -1,3 +1,21 @@
 <script>
-    
+
+function contarVogais(str) {
+        let contador = 0;
+        str = str.toLowerCase();
+
+        for (let i = 0; i < str.length; i++) {
+            if ("aeiou".includes(str[i])) {
+                contador++;
+            }
+        }
+
+        return contador;
+    }
+
+    let frase = prompt("Digite uma frase:");
+    let resultado = contarVogais(frase);
+
+    alert(`A frase "${frase}" tem ${resultado} vogais.`);
+
 </script>

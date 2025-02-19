@@ -1,3 +1,14 @@
 <script>
-    
+    function calcularFatorial(n) {
+        let fatorial = 1;
+        for (let i = 1; i <= n; i++) {
+            fatorial *= i;
+        }
+        return fatorial;
+    }
+
+    let numero = Number(prompt("Digite um numero inteiro:"));
+    alert(`O fatorial de ${numero} é ${calcularFatorial(numero)}.`);
+
+
 </script>

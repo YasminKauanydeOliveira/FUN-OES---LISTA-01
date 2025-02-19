@@ -4,15 +4,19 @@
     Desenvolva um programa que contenha uma função que apresente um cumprimento para o usuário, mostrando a seguinte mensagem:
     "Bom dia, Visitante!"
     *Substitua a palavra Visitante pelo nome do usuário, que será fornecido pelo próprio usuário.
-    */
-
-    //ENTRADA
-
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
     
+    */
+    function cumprimentarUsuario(nome) {
+        alert(`Bom dia, ${nome}!`);
+    }
+
+    let nome = prompt("Digite seu nome:");  
+
+    if (nome.trim() == "") {
+        alert("Por favor, insira um nome válido.");
+    } else {
+        cumprimentarUsuario(nome);
+    }
+
 </script>
     

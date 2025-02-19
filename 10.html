@@ -5,32 +5,27 @@
     *A frase (ou palavra) e a letra devem ser fornecidas pelo usuário.
     */
    
-    function contarLetra(frase, letra) {
-    let contador = 0;
-    frase = frase.toLowerCase();  
-    letra = letra.toLowerCase();
     
-    for (let i = 0; i < frase.length; i++) {
-        if (frase[i] === letra) {
-            contador++;
+    function contarLetra(frase, letra) {
+        let contador = 0;
+        let = frase.toLowerCase();  
+        let = letra.toLowerCase();
+        
+        for (let i = 0; i < frase.length; i++) {
+            if (frase[i] === letra) {
+                contador++;
+            }
         }
+        return contador;
     }
-    return contador;
-}
 
-function programa() {
-    let frase = prompt("Digite uma frase:");  
-    let letra = prompt("Digite uma letra:");  
+    let frase = prompt("Digite uma frase:");
+    let letra = prompt("Digite uma letra:");
+
     if (letra.length !== 1) {
         alert("Por favor, insira apenas uma letra.");
-        return;
+    } else {
+        let resultado = contarLetra(frase, letra);
+        alert(`A letra "${letra}" aparece ${resultado} vez(es) na frase.`);
     }
- 
-    let resultado = contarLetra(frase, letra);
-
-    alert(`A letra "${letra}" aparece ${resultado} vez(es) na frase.`);
-}
-
-programa();
-
 </script>
