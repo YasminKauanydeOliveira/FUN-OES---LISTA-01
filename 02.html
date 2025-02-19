@@ -1,0 +1,21 @@
+    <script>
+    /*
+    PROBLEMA: CALCULAR CUBO DE UM NÚMERO
+    Peça para o usuário informar um número inteiro.
+    Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
+    */
+
+    //ENTRADA
+    function calcularCubo(numero) {
+        return numero ** 3;
+    }
+    //PROCESSAMENTO
+    function programa() {
+        let numero = parseInt(prompt("Digite um número inteiro:")); 
+        let resultado = calcularCubo(numero);
+        alert(`O cubo de ${numero} é ${resultado}`);
+    }
+    //SAÍDA
+    programa();
+
+</script>
